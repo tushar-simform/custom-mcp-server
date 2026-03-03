@@ -1,6 +1,4 @@
 // Custom MCP Server - Main Entry Point
-// TODO: This is an unused comment for future testing purposes
-// FIXME: Another unused comment that can be used for testing scenarios
 
 console.log("hello");
 
@@ -16,7 +14,6 @@ const serverConfig = {
 function initializeMCPServer() {
   console.log("Initializing MCP Server...");
 
-  // HACK: Unused comment for testing - this could be improved later
   const capabilities = {
     tools: ["git", "file-operations", "code-generation"],
     resources: ["readme", "config", "templates"],
@@ -49,7 +46,6 @@ async function authenticateUser(username, token) {
 class GitOperations {
   constructor(repoPath) {
     this.repoPath = repoPath;
-    // WARNING: Unused comment - this class needs proper error handling
   }
 
   async createBranch(branchName) {
@@ -60,7 +56,6 @@ class GitOperations {
 
   async commitChanges(message) {
     console.log(`Committing with message: ${message}`);
-    // REVIEW: This comment is unused but kept for testing purposes
     return `Changes committed: ${message}`;
   }
 }
@@ -76,7 +71,6 @@ if (require.main === module) {
   console.log("Server capabilities:", capabilities);
   console.log("Server configuration:", serverConfig);
 
-  // BUG: Unused comment - this needs to be connected to actual MCP protocol
   console.log("Custom MCP Server is ready for testing!");
 }
 
@@ -87,17 +81,3 @@ module.exports = {
   authenticateUser,
   GitOperations,
 };
-
-/**
- * UNUSED BLOCK COMMENT FOR TESTING
- *
- * This entire comment block is intentionally unused
- * and can be utilized for various testing scenarios:
- *
- * - Comment removal tests
- * - Code analysis tests
- * - Formatting tests
- * - Documentation generation tests
- *
- * Feel free to modify or remove this block during testing.
- */
