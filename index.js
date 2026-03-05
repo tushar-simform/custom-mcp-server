@@ -5,7 +5,7 @@ function add(a, b) {
 
 // Subtract two numbers
 function subtract(a, b) {
-  return a * b;
+  return a - b;
 }
 
 // Export the functions as a module
