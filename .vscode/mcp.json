@@ -1,13 +1,8 @@
 {
   "servers": {
-    "github": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": {
-        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
-      }
+    "weather": {
+      "command": "node",
+      "args": ["/home/tushar/Learn-Stack/custom-mcp-server/build/index.js"]
     }
-  },
-  "inputs": []
+  }
 }
